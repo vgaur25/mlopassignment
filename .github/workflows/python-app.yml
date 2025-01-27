@@ -49,3 +49,11 @@ jobs:
       # Step 4: Run tests
       - name: Run tests
         run: pytest
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy model
+        run: echo "Deploying model..."
