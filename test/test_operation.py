@@ -6,6 +6,7 @@ from  src.math_operation import add, sub
 def test_add():
     assert add(2, 5)==7
     assert add(-1, 1)==0
+    assert add(6, 1)==7
 
 
 def test_sub():
